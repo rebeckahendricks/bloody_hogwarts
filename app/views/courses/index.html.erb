@@ -1,0 +1,10 @@
+<h1>Courses & Enrollment</h1>
+
+<ul>
+<% @courses.each do |course| %>
+  <h3><%= course.name %>: <%= course.enrollment %></h3>
+  <% course.students.each do |student| %>
+    <li> <%= student.name %> <br>
+  <% end %>
+<% end %>
+</ul>

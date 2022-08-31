@@ -1,0 +1,10 @@
+<h1> Students </h1>
+
+<% @students.each do |student| %>
+
+<h4>Name: <%= student.name %></h4>
+<p>Age: <%= student.age %></p>
+<p>House: <%= student.house %></p>
+
+<% end %>
+<p>Average Age: <%= @students.average_age %></p>
